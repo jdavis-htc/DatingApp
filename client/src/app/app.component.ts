@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { NavComponent } from "./nav/nav.component";
-import { AcccountService } from './_services/acccount.service';
+import { AccountService } from './_services/account.service';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -11,7 +11,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  private accountService = inject(AcccountService);
+  private accountService = inject(AccountService);
 
   ngOnInit(): void {
     this.setCurrentUser();
